@@ -177,6 +177,35 @@ int main()
         } 
 		else if (prompt == "milkshake")
 		{
+			std::cout << response1[19] << std::endl;
+			write_response(response1[19], size, "response1.txt");
+			write_response(response2[19], size, "response2.txt");
+			write_response(response3[19], size, "response3.txt");
+        }
+		else if (prompt == "smoothie")
+		{
+			std::cout << response1[20] << std::endl;
+			write_response(response1[20], size, "response1.txt");
+			write_response(response2[20], size, "response2.txt");
+			write_response(response3[20], size, "response3.txt");
+        }
+		else if (prompt == "chicken curry")
+		{
+			std::cout << response1[21] << std::endl;
+			write_response(response1[21], size, "response1.txt");
+			write_response(response2[21], size, "response2.txt");
+			write_response(response3[21], size, "response3.txt");
+        }
+		else if (prompt == "Rice")
+		{
+			std::cout << response1[22] << std::endl;
+			write_response(response1[22], size, "response1.txt");
+			write_response(response2[22], size, "response2.txt");
+			write_response(response3[22], size, "response3.txt");
+        }
+		else if (prompt == "lasagna")
+		{
+
 
 
 		}
@@ -254,6 +283,10 @@ std::string* give_response1(int size, std::string username) // a function that w
 	response1[17] = "Alright" + username + "Here is how we'll cook Chicken Seekh Kebab" + "\n" + "Ingredients : 500g boneless chicken (minced), 1 small onion (finely chopped), 1 tbsp ginger garlic paste, 1 tbsp red chilli powder, 1 tbsp cumin powder, 1 tbsp garam masala, 1 tbsp breadcrumbs, Salt to taste, Oil for brushing." + "\n" + "Steps :" + "\n" + "1. Place minced chicken in a bowl and squeeze out excess moisture." + "\n" + "2. Add onion, ginger-garlic paste, spices, salt, and breadcrumbs." + "\n" + "3. Mix thoroughly until mixture binds well." + "\n" + "3. Shape mixture onto skewers in long kebab shapes." + "\n" + "5. Grill on medium heat or bake at 200 degree celsius for 20 minutes, turning halfway." + "\n" + "6. Brush lightly with oil and cook until golden. Serve hot.";                                                                                                                                                                                                                                                                                                                                  
 	response1[18] = "Sure" + username + "let's make Vanilla Ice Cream step by step." + "\n" + "Ingredients :" + "\n" + "2 cups fresh cream, 1 cup condensed milk, 1 tbsp vanilla essence." + "\n" + "Steps :" + "\n" + "1. Whip cream until thick but not stiff." + "\n" + "2. Gently fold in condensed milk and vanilla." + "\n" + "3. Pour mixture into a container." + "\n" + "4. Freeze for 6-8 hours, stirring once after 3 hours for smooth textures." + "\n" + "5. Scoop and serve chilled.";
 	response1[19] = "Perfect" + username + "This is how we'll prepare Chocolate Milkshake." + "\n" + "Ingredients : 2 cups cold milk, 3 tbsp chocolate syrup, 1 scoop vanilla icecream." + "\n" + "Steps :" + "\n" + "1. Add milk, syrup and ice cream to blender.";
+	response1[20] = "Yes" + username + "Here is exactly what you need to make Mango Banana Smoothie." + "\n" + "Ingredients : 1 cup mango chunks, 1 banana, 1 cup milk." + "\n" + "Steps :" + "\n" + "1. Blend mango and banana first." + "\n" + "2. Add milk and blend again." + "\n" + "3. Serve immediately.";
+	response1[21] = "Alright" + username + "Let's learn how to cook Traditional Chicken Curry." + "\n" + "Ingredients : 500g chicken, 2 onions, 2 tomatoes, 1 tbsp ginger-garlic paste, 1 tbsp tumeric, 1 tbsp red chilli powder, Oil and salt." + "\n" + "Steps :" + "\n" + "1. Heat oil and fry onions until golden." + "\n" + "2. Add ginger-garlic paste and spices." + "\n" + "3. Add tomato puree and cook until oil separates." + "\n" + "4. Add chicken and mix well." + "\n" + "5. Cover and cook on medium heat for 20 minutes." + "\n" + "6. Add water if needed and simmer.";
+	response1[22] = "No worries" + username + "I've got you. Below is the recipe of Plain Steamed White Rice." + "\n" + "Ingredients : 2 cups basmati rice, 4 cups water, 1 tbsp salt." + "\n" + "Steps :" + "\n" + "1. Wash rice 2-3 times until water runs clear." + "\n" + "2. Soak rice for 20 minutes, then drain." + "\n" + "3. Bring water to a boil in a pot and add salt." + "\n" + "4. Add rice and cook uncovered on medium heat for 10 minutes." + "\n" + "5. When rice is soft, drain excess water." + "\n" + "6. Cover and let rest for 5 minutes before serving.";
+	response1[23] = "Perfect" + username + "I've super easy recipe for you to cook Classic Beef Lasagna." + "\n" + "Ingredients : Lasagna sheets, 500g minced beef, 2 cups tomato sauce, 1 cup white sauce, 1 and a half cup mozarella cheese, Oil, Salt and pepper." + "\n" + "Steps :" + "\n" + "1. Cook beef with oil, salt and pepper until browned." + "\n" + "2. Add tomato sauce and simmer for 10 minutes." + "\n" + "3. Boil lasagna sheets according to package instructions." + "\n" + "4. In a baking dish, layer meat sauce, sheets, and white sauce." + "\n" + "5. Repeat layers and top with cheese." + "\n" + "6. Bake at 180 degree celsius for 30 minutes. Let rest before slicing.";
 	return response1;
 }	
 std::string* give_response2(int size, std::string username) // a function that will create and return dynamic array of responses.
@@ -279,6 +312,12 @@ std::string* give_response2(int size, std::string username) // a function that w
 	response2[16] = "Sure" + username + "Here i exactly what you need to cook Chicken samosa." + "\n" + "Ingredients : Minced chicken, Onion, Spices." + "\n" + "Steps :" + "\n" + "1. Cook chicken with spices." + "\n" + "2. Cook filling until dry and then cool it." + "\n" + "3. Fill sheets and seal edges." + "\n" + "4. Fry samosa on medium heat.";
 	response2[17] = "Alright" + username + "Here is how we will cook Beef Chapli kebab." + "\n" + "Ingredients : 500g beef mince, 1 onion, 1 tomato, 2 green chillies, 1 tbsp coriander powder, 1 tbsp red chilli flakes, Salt to taste, Oil for shallow frying." + "\n" + "Steps : " + "\n" + "1. Combine beef mince, onion, tomato, chillies, spices, and salt in a bowl." + "\n" + "2. Mix gently to avoid over-mashing the meat." + "\n" + "3. Shape into flat round patties." + "\n" + "4. Heat oil in a frying pan on medium heat." + "\n" + "5. Fry kebabs until cooked through and crisp on both sides."  + "\n" + "6. Serve with naan and chutney.";                                                                                                 
 	response2[18] = "Sure" + username + "Let's make Chocolate Ice Cream step by step." + "\n" + "Ingredients : 2 cups fresh cream, 1 cup condensed milk, 3 tbsp cocoa powder." + "\n" + "Steps :" + "\n" + "1. Sift cocoa powder to remove lumps." + "\n" + "2. Whip cream until thick." + "\n" + "3. Fold in condensed milk and cocoa powder." + "\n" + "4. Freeze mixture, stirring once halfway through." + "\n" + "5. Serve when fully set.";
+	response2[19] = "Got you" + username + "Let's start making Strawberry milkshake." + "\n" + "Ingredients : 1 cup fresh strawberries, 2 cups cold milk, 2 tbsp sugar." + "\n" + "Steps :" + "\n" + "1. Blend strawberries with sugar until smooth." + "\n" + "2. Add milk and blend again." + "\n" + "3. Chill for 10 minutes and serve.";
+	response2[20] = "Yes" + username + "Here is exactly what you need to make Green Detox Smoothie." + "\n" + "Ingredients : Spinach leaves, Green apple, Lemon juice, Water." + "\n" + "Steps :" + "\n" + "1. Chop apple and wash spinach." + "\n" + "2. Blend with water and lemon juices." + "\n" + "3. Serve fresh.";
+	response2[21] = "Alright" + username + "Let's learn how to cook Butter Chicken." + "\n" + "Ingredients : Cooked chicken pieces, Butter, Tomato puree, Cream, Garam masala." + "\n" + "Steps :" + "\n" + "1. Heat butter and add tomato puree." + "\n" + "2. Cook until thick and glossy." + "\n" + "3. Add chicken and garam masala." + "\n" + "4. Stir in cream and simmer for 5 minutes." + "\n" + "5. Serve hot with naan.";
+	response2[22] = "No worries" + username + "I've got you. Below is the recipe of Jeera (Cumin) Rice." + "\n" + "Ingredients : 2 cups basmati rice, 2 tbsp oil or ghee, 1 tbsp cumin seeds, 4 cups water, Salt to taste." + "\n" + "Steps :" + "\n" + "1. Wash and soak rice for 20 minutes." + "\n" + "2. Heat oil or ghee in a pot on medium heat." + "\n" + "3. Add cumin seeds and let them crackle." + "\n" + "4. Add drained rice and stir gently for 1 minute." + "\n" + "5. Add water and salt." + "\n" + "6. Cook until rice is fluffy and grains are separate.";
+	response2[23] = "Perfect" + username + "I've super easy recipe for you to cook Chicken Lasagna." + "\n" + "Ingredients : Cooked shredded chicken, Lasagna sheets, White sauce, Mozarella cheese." + "\n" + "Steps :" + "\n" + "1. Mix chicken with white sauce and seasoning." + "\n" + "2. Boil lasagna sheets and drain." + "\n" + "3. Layer chicken mixture and sheets in a baking dish." + "\n" + "4. Top with cheese." + "\n" + "5. Bake at 180 degree celsius for 25-30 minutes."; 
+
 	
 	return response2;
 }
@@ -305,6 +344,10 @@ std::string* give_response3(int size, std::string username) // a function that w
 	response3[16] = "Sure" + username + "Here is exactly what you need to cook Cheese Samosa" + "\n" + "Ingredients : Cheese cubes, Sheets, Spices." + "\n" + "Steps :" + "\n" + "1. Fill sheets with filling and cheese." + "\n" + "2. Fry samosa until golden.";
 	response3[17] = "Alright" + username + "Here is how we will cook Vegetable Kebab" + "\n" + "Ingredients : 2 cups mixed vegetables (potato, carrot, peas), 2 tbsp cornflour, 1 tbsp cumin powder, Half tbsp black pepper, Salt to taste, Oil for frying." + "\n" + "Steps :" + "\n" + "1. Boil vegetables until soft, then mash coarsely." + "\n" + "2. Add cornflour, spices, ans salt. Mix well." + "\n" + "3. Shape mixture into small patties." + "\n" + "4. Heat oil on medium heat." + "\n" + "5. Shallow fry kebabs until golden on both sides." + "\n" + "6. Serve hot with sauce.";
 	response3[18] = "Sure" + username + "Let's make Mango Ice Cream step by step." + "\n" + "Ingredients : 1 and a half cups mango pulp, 1 and a half cup fresh cream, 3 quarters of a cup condensed milk." + "\n" + "Steps :" + "\n" + "1. Whip cream lightly until creamy." + "\n" + "2. Fold in mango pulp and condensed milk." + "\n" + "3. Pour into container and freeze for 6 hours." + "\n" + "4. Allow to soften slightly before serving.";                                                                                   
+	response3[19] = "Got you" + username + "Let's start making Banana milkshake" + "\n" + "Ingredients :" + "\n" + " 2 ripe bananas, 2 cups cold milk, 1 tbsp honey." + "\n" + "Steps :" + "\n" + "1. Peel and slice bananas." + "\n" + "2. Blend bananas with milk and honey until smooth." + "\n" + "3. Serve immediately for best taste.";                                                                                                    
+	response3[20] = "Yes" + username + "Here is exactly what you need to make Berry Smoothie." + "\n" + "Ingredients : 1 cup mixed berries, 1 cup yogurt, Half cup milk, Honey to taste." + "\n" + "Steps :" + "\n" + "1. Add all ingredients to blender." + "\n" + "2. Blend until thick and smooth." + "\n" + "3. Serve chilled.";
+	response3[21] = "Alright" + username + "Let's learn how to cook Chicken Karahi." + "\n" + "Ingredients : Chicken, Tomatoes, Green Chillies, Ginger slices, Karahi masala." + "\n" + "Steps :" + "\n" + "1. Cook chicken on high heat with oil." + "\n" + "2. Add tomatoes and spices." + "\n" + "3. Cook uncovered until oil separates." + "\n" + "4. Garnish with ginger and chillies. Serve hot.";
+	response3[22] = "No worries" + username + "I've got you. Below is the recipe of Vegetable Rice." + "\n" + "Ingredients : 2 cups rice, 1 cup mixed vegetables (carrot, peas, beans), 2 tbsp oil, Half tbsp black pepper, Salt to taste." + "\n" + "Steps :" + "\n" + "1. Wash and soak rice for 20 minutes." + "\n" + "2. Heat oil in a pot and saute vegetables for 3 minutes." + "\n" + "3. Add rice, water, salt, and pepper." + "\n" + "4. Cook covered on medium heat until rice is done." + "\n" + "5. Fluff gently and serve hot.";
 	return response3;
 }
 
